@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_motion"
+        android:title="@string/title_motion"
+        android:icon="@drawable/ic_motion_tracker"/>
+
+
+    <item
+        android:id="@+id/navigation_position"
+        android:title="@string/title_position"
+        android:icon="@drawable/ic_position"/>
+
+    <item
+        android:id="@+id/navigation_environment"
+        android:title="@string/title_environment"
+        android:icon="@drawable/ic_enviroment"/>
+
+</menu>
