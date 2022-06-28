@@ -78,7 +78,6 @@ class MotionFragment : Fragment(){
         if (sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER) == null) {
             Toast.makeText(context,"You don't have a step counter",Toast.LENGTH_SHORT).show()
         } else {
-            Log.i("Step_sensor","Registering step sensor")
             lifecycleScope.launch(Dispatchers.Default) {
                 sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER)?.also {
                     sensorManager.registerListener(
@@ -111,7 +110,6 @@ class MotionFragment : Fragment(){
 
     override fun onResume() {
         super.onResume()
-        Log.i("Step_sensor","Registering step sensor after onResume")
         lifecycleScope.launch(Dispatchers.Default) {
             sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER)?.also {
                 sensorManager.registerListener(
