@@ -7,7 +7,10 @@ import androidx.lifecycle.ViewModel
 class EnviromentViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is enviroment Fragment"
+        value = "0"
+    }
+    fun setText(userValue:String) {
+        _text.value = userValue
     }
     val text: LiveData<String> = _text
 }
